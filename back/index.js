@@ -2,9 +2,9 @@ const express = require('express')
 var cors = require('cors');
 const app = express()
 
-// app.use(cors());
+app.use(cors());
 app.use(express.json())
-app.use(express.static('build'))
+// app.use(express.static('build'))
 
 let notes = [
   {
